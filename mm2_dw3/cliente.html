@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100 flex items-center justify-center min-h-screen py-12">
+
+    <div class="bg-gray-800 p-8 rounded-lg shadow-xl w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-6 text-center text-white">Cadastro de Cliente</h2>
+        
+        <form action="cadastrar_cliente.php" method="post" class="space-y-4">
+            
+            <div>
+                <label for="nome" class="block text-sm font-medium text-gray-300 mb-1">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required 
+                       class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <label for="endereco" class="block text-sm font-medium text-gray-300 mb-1">Endereço</label>
+                <input type="text" id="endereco" name="endereco" required
+                       class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-300 mb-1">E-mail</label>
+                <input type="email" id="email" name="email" required
+                       class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <label for="username" class="block text-sm font-medium text-gray-300 mb-1">Nome de Usuário</label>
+                <input type="text" id="username" name="username" required
+                       class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <label for="senha" class="block text-sm font-medium text-gray-300 mb-1">Senha</label>
+                <input type="password" id="senha" name="senha" required
+                       class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <label for="celular" class="block text-sm font-medium text-gray-300 mb-1">Celular</label>
+                <input type="tel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX" required
+                       class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+
+            <div>
+                <button type="submit" 
+                        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300 ease-in-out transform hover:scale-105 mt-4">
+                    Enviar Cadastro
+                </button>
+            </div>
+        </form>
+
+        <div class="mt-6 text-center">
+            <a href="index.html" class="text-blue-400 hover:text-blue-300 transition duration-300">
+                &larr; Voltar à página inicial
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
